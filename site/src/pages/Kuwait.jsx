@@ -7,6 +7,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Activities from "../components/Activities";
 import Stats from "../components/Stats";
 import Projects from "../components/Projects";
+import Plants from "../components/Plants";
 import Gallery from "../components/Gallery";
 import CTA from "../components/CTA";
 import Contact from "../components/Contact";
@@ -55,6 +56,7 @@ export default function Kuwait() {
       <Activities />
       <Stats />
       <Projects />
+      <Plants />
       <Gallery onOpen={(i) => setLightboxIndex(i)} />
       <CTA />
       <Contact />

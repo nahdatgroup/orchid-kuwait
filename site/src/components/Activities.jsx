@@ -170,7 +170,7 @@ function ActivityCard({ activity, variant, index = 0 }) {
   const Icon = icons[activity.icon];
 
   const bgClasses = isWhite
-    ? "bg-white text-ink"
+    ? "bg-white text-ink ring-1 ring-primary/10"
     : "bg-gradient-to-br from-primary via-primary to-forest text-white";
 
   return (
@@ -268,7 +268,7 @@ export function Leaf({ size = 48, delay = 0, duration = 6, flip = false, blur = 
   );
 }
 
-function AmbientLeaves({ theme = "light" }) {
+export function AmbientLeaves({ theme = "light" }) {
   // theme only affects which corners feel natural against the dark vs. light backdrop
   if (theme === "dark") {
     return (
@@ -289,7 +289,7 @@ function AmbientLeaves({ theme = "light" }) {
   );
 }
 
-function OrganicWave() {
+export function OrganicWave() {
   return (
     <div className="absolute inset-x-0 bottom-0 translate-y-px leading-none" aria-hidden="true">
       <svg
@@ -299,12 +299,12 @@ function OrganicWave() {
       >
         <path
           d="M0,140 C180,40 340,10 520,55 C700,100 760,190 940,165 C1120,140 1240,55 1440,95 L1440,220 L0,220 Z"
-          fill="#F7F8F4"
+          fill="#FFFFFF"
           opacity="0.5"
         />
         <path
           d="M0,160 C200,70 360,40 540,80 C720,120 780,200 960,180 C1140,160 1260,80 1440,120 L1440,220 L0,220 Z"
-          fill="#F7F8F4"
+          fill="#FFFFFF"
         />
       </svg>
     </div>

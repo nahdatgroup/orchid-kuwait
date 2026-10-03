@@ -11,7 +11,7 @@ function scallopPath(width, bumpR, baseHeight) {
   return d;
 }
 
-export default function OrganicDivider({ fill = "#F7F8F4", className = "" }) {
+export default function OrganicDivider({ fill = "#FFFFFF", className = "" }) {
   const width = 1440;
   const bumpR = 26;
   const height = 90;

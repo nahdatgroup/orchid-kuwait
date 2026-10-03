@@ -8,7 +8,7 @@
   --color-primary: #2F7D32;
   --color-bright: #70B82A;
   --color-light: #DCEED8;
-  --color-offwhite: #F7F8F4;
+  --color-offwhite: #FFFFFF;
   --color-white: #FFFFFF;
   --color-ink: #172019;
 
@@ -193,4 +193,34 @@ textarea:focus-visible {
   .glass-light {
     background: rgba(241, 235, 224, 0.92);
   }
+}
+
+/* ============================================================
+   Plant collection — infinite name ticker
+   ============================================================ */
+@keyframes plant-marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+.plant-marquee {
+  animation: plant-marquee 45s linear infinite;
+}
+.plant-marquee:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .plant-marquee { animation: none; }
+}
+
+/* Landing — shimmering gradient title word */
+@keyframes landing-shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+.landing-shimmer {
+  background-size: 200% auto;
+  animation: landing-shimmer 6s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .landing-shimmer { animation: none; }
 }
